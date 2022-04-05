@@ -1,10 +1,8 @@
 package com.example.coffee.view
 
-import android.R
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import android.widget.ArrayAdapter
-import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
 import com.example.coffee.databinding.CoffeeRowItemBinding
 import com.example.coffee.models.CoffeeItem
@@ -34,7 +32,9 @@ class CoffeeAdapter(private val listner:SelectedCoffeeListner): RecyclerView.Ada
         holder.binding.coffeeTitle.text=currentCoffee.title
         holder.binding.coffeeDescription.text=currentCoffee.description
 
-
+       // holder.itemView.setOnClickListener(
+         //   listner.onSlelectedCoffee(currentCoffee)
+        //)
 
 
 

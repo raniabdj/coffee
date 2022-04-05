@@ -2,18 +2,13 @@ package com.example.coffee
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.View
 import androidx.lifecycle.ViewModelProvider
-import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
-import androidx.recyclerview.widget.RecyclerView
-import com.example.coffee.R
 import com.example.coffee.databinding.ActivityMainBinding
-import com.example.coffee.models.Coffee
+import com.example.coffee.models.CoffeeItem
 import com.example.coffee.service.CoffeeRepository
 import com.example.coffee.service.CoffeeService
 import com.example.coffee.utils.SelectedCoffeeListner
-import com.example.coffee.utils.Status
 import com.example.coffee.view.CoffeeAdapter
 import com.example.coffee.viewModel.CoffeeViewModel
 import com.example.coffee.viewModel.CoffeeViewModelFactory
@@ -81,7 +76,7 @@ class MainActivity : AppCompatActivity(), SelectedCoffeeListner{
    }
 
 
-    override fun onSlelectedCoffee(selected: Coffee) {
+    override fun onSlelectedCoffee(selected: CoffeeItem) {
         TODO("Not yet implemented")
     }
 }
